@@ -1,0 +1,4 @@
+config:
+  first-pulumi-project:backendPort: "3000"
+  first-pulumi-project:frontendPort: "3001"
+  first-pulumi-project:mongoPort: "27017"
