@@ -1,0 +1,11 @@
+{
+    "name": "first-pulumi-project",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^16"
+    },
+    "dependencies": {
+        "@pulumi/docker": "^4.4.4",
+        "@pulumi/pulumi": "^3.0.0"
+    }
+}
