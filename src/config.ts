@@ -9,6 +9,8 @@ export const loadConfig = () => {
   const frontendPort = config.requireNumber("frontendPort");
   const backendPort = config.requireNumber("backendPort");
   const mongoPort = config.requireNumber("mongoPort");
+  const mongoUsername = config.require("mongoUsername");
+  const mongoPassword = config.requireSecret("mongoPassword");
   const mongoHost = config.require("mongoHost"); // Note that strings are the default, so it's not `config.requireString`, just `config.require`.
   const database = config.require("database");
   const nodeEnvironment = config.require("nodeEnvironment");
@@ -22,5 +24,7 @@ export const loadConfig = () => {
     database,
     nodeEnvironment,
     protocol,
+    mongoUsername,
+    mongoPassword,
   };
 };
