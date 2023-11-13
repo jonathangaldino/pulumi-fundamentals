@@ -96,3 +96,6 @@ const frontendContainer = new docker.Container("frontendContainer", {
     },
   ],
 });
+
+//  Generating outputs
+export const url = pulumi.interpolate`http://localhost:${config.frontendPort}`;
